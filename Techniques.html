@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Techniques</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 100;
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-weight: 400;
+            margin: 20px 0;
+        }
+
+        #navbarNavAltMarkup>div>a {
+            transition: ease-out 0.2s;
+        }
+
+        #navbarNavAltMarkup>div>a:hover {
+            transform: scale(1.2);
+        }
+
+        #growth {
+            margin-top: 4rem;
+        }
+
+        #success {
+            margin-top: -1rem;
+            margin-left: -2rem;
+        }
+
+        #Sign-Up {
+            margin: 5rem 0 0 0;
+            text-align: center;
+        }
+
+        .btn-success {
+            margin-top: 1rem;
+            height: 50px;
+            width: 124px;
+            border-radius: 25px;
+            transition: ease-in-out 0.5s;
+        }
+
+        .btn-success:hover {
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 6rem;
+            }
+
+            .btn-success {
+                margin-left: 0;
+            }
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        #success {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+
+        @media screen and (min-width:768px) and (max-width: 966px) {
+            #picsvg {
+                width: 30rem;
+            }
+        }
+
+        #text {
+            font-size: 25px;
+        }
+
+        @media screen and (min-width:444px) and (max-width: 525px) {
+            #text {
+                font-size: 23px;
+            }
+        }
+
+        @media screen and (max-width: 443px) {
+            #text {
+                font-size: 22px;
+                margin-top: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 390px) {
+            #text {
+                font-size: 20px;
+                margin-right: -1rem;
+            }
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            h1 {
+                font-size: 3.3rem;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media screen and (max-width: 470px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media screen and (max-width: 386px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 341px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media screen and (max-width: 314px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 280px) {
+            h1 {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 443px) and (max-width: 575px) {
+            #text {
+                margin-top: 40px;
+                margin-left: 2rem;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 500px) {
+            #img2 {
+                width: 18rem;
+            }
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 600px) {
+            #img2 {
+                width: 23rem;
+            }
+
+            #img3 {
+                width: 30rem;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 990px) {
+
+            #img2,
+            #img3 {
+                width: 25rem;
+            }
+        }
+
+        @media screen and (min-width: 765px) and (max-width: 799px) {
+
+            #img2,
+            #img3 {
+                width: 22rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid px-md-5 px-3">
+
+        <nav class="navbar navbar-expand-lg bg-light fixed-top  lh-1 pt-3 px-md-3" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="Home.html"><img src="logo.png" alt="logo" height="40em"
+                        width="35em">&nbsp;Progress Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center ps-lg-5 ms-lg-5" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center ms-lg-5 ps-lg-4">
+                        <a class="nav-link text-dark fw-semibold px-4" href="Home.html">Home</a>
+                        <a class="nav-link text-dark fw-semibold px-4" href="Features.html">Features</a>
+                        <a class="nav-link active fs-6 fw-bolder border border-secondary rounded px-4 p-2 me-lg-3"
+                            aria-current="page" href="Techniques.html" style="color: #6C63FF;">Techniques</a>
+                    </div><br>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center justify-content-lg-end me-n5 gap-2 navbar-nav text-center "
+                    id="navbarNavAltMarkup">
+                    <div class="fs-5 me-lg-4 order-lg-1 order-sm-3 order-3 my-sm-2 my-2">
+                        <i class="bi bi-brightness-high text-dark" id="sun"></i>
+                        <i class="bi bi-moon text-dark" id="moon"></i>
+                    </div>
+                    <a href="Sign-up.html" class="mb-lg-0 mb-md-2 order-1 order-sm-1 order-lg-2"><button
+                            class="btn btn-primary">Sign Up</button></a>
+                    <a href="Log-in.html" class="me-n5 order-2 order-lg-3 order-sm-2"><button
+                            class="btn btn-primary">Log In</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid row my-5 mt-5 " id="first">
+            <div class="col-sm-12 col-md-12 mt-5 mb-sm-5 animate__animated animate__fadeInLeft animate__slow">
+                <h1 class="mt-5 pt-5 my-5 text-sm-center text-center mx-sm-0">Time Management <br>
+                    techniques</h1>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center ms-md-auto py-5 mx-1 border rounded" id="div1">
+            <h2 class="fs-1 ms-lg-5">Pomodoro Technique</h2>
+            <div class="col-md-12 col-lg-8 me-n4 mx-md-5 mx-lg-0 ms-lg-0">
+                <p class=" pe-md-5 me-sm-5 ms-sm-5 py-sm-5 px-md-3 mx-sm-5 col-lg-8 col-md-12 ps-sm-4 pe-sm-n5"
+                    id="text">The Pomodoro
+                    Technique is a time management method that breaks work into intervals, traditionally 25
+                    minutes in length, separated by short breaks.</p>
+            </div>
+            <div class="col-md-5 col-sm-7 col-lg-4 col-8  ps-sm-3 px-4 my-5 py-5 py-md-0 px-md-5 me-n5 mt-lg-2 mt-md-2 mt-sm-1"
+                id="img2">
+                <img src="pomodoro.png" alt="pomodoro image" width="290"
+                    class="img-fluid rounded ms-sm-2 ms-md-0 ms-0 mt-lg-4 mt-md-5 pe-n5 me-n5" id="img1">
+            </div>
+            <div class="text-md-end me-lg-5 text-center mt-3 mt-md-5 me-md-0">
+                <a href="https://pomodora.io/" style="text-decoration: none;color:black;" target="_blank"><button
+                        class="btn px-4 me-md-5 rounded-pill py-3" style="background-color:#F4F2F0; color:black;"
+                        id="button">Pomodoro <i class="bi bi-arrow-right "></i></button></a>
+            </div>
+        </div><br><br><br>
+
+
+        <div class="row justify-content-center ms-md-auto py-5 mx-1 border rounded" id="div2">
+            <h2 class="fs-1 ms-lg-5">Eisenhower Matrix</h2>
+            <div class="col-md-12 col-lg-8 me-n4 mx-md-5 mx-lg-0 ms-lg-0">
+                <p class=" pe-md-5 me-sm-5 ms-sm-5 py-sm-5 px-md-3 mx-sm-5 col-lg-8 col-md-12 ps-sm-4 pe-sm-n2"
+                    id="text">Eisenhower Matrix is a technique of prioritizing of your task on the basis of their
+                    importance. It helps to find out the work which is most important and which deserve more attention.
+                </p>
+                <p class="ms-sm-5 py-sm-2 mx-sm-5 col-lg-8 col-md-11 ps-sm-4 pe-sm-n2 bg-secondary">After clicking on
+                    button:
+                    1. The appearance (theme) of this page will be based on your system theme settings.
+
+                    2. Click on the second icon after “search” to create your own eisenhower matrix in just one click.
+                </p>
+            </div>
+            <div class="col-md-5 col-sm-7 col-lg-4 col-8 ps-sm-3 px-4 my-5 py-5 py-md-0 px-md-5 me-n2 mt-lg-2 mt-md-2 mt-sm-1"
+                id="img2">
+                <img src="Eisenhower1.png" alt="Eisenhower image" width="420"
+                    class="img-fluid rounded ms-sm-2 ms-md-0 ms-0 mt-lg-4 mt-md-5 pe-n5 me-n5">
+            </div>
+            <div class="text-md-end me-lg-5 text-center mt-3 mt-md-5 me-md-0">
+                <a href="https://eisenhowermatrixbykhushij.notion.site/Matrix-Formula-dd9f0de374574a13867abc7f7f53fbc2?pvs=4"
+                    style="text-decoration: none;color:black;" target="_blank"><button
+                        class="btn px-4 me-md-5 rounded-pill py-3" style="background-color:#F4F2F0; color:black;"
+                        id="button1"> Eisenhower <i class="bi bi-arrow-right "></i></button> </a>
+            </div>
+        </div><br><br><br>
+
+
+        <div class="row justify-content-center ms-md-auto py-5 mx-1 border rounded" id="div3">
+            <h2 class="fs-1 ms-lg-5">The 2-Minute Rule</h2>
+            <div class="col-md-12 col-lg-8 me-n4 mx-md-5 mx-lg-0 ms-lg-0">
+                <p class=" pe-md-5 me-sm-5 ms-sm-5 py-sm-5 px-md-3 mx-sm-5 col-lg-8 col-md-12 ps-sm-4 pe-sm-n5"
+                    id="text">The rule is simple: If a task can be completed
+                    in two minutes or less, do it immediately. The idea is to handle quick and small tasks on the spot
+                    rather than letting them accumulate on your to-do list.</p>
+            </div>
+            <div class="col-md-5 col-sm-6 col-lg-4 col-8 ps-sm-3 px-4 ps-md-5 my-5 py-5 py-md-0 px-md-5 me-n5 mt-lg-2 mt-md-2 mt-sm-1"
+                id="img2">
+                <img src="2 min.png" alt="The two minute rule image" width="290"
+                    class="img-fluid rounded ms-sm-2 ms-md-0 ms-0 mt-lg-4 mt-md-5 pe-n5 me-n5" id="img3">
+            </div>
+            <div class="text-md-end me-lg-5 text-center mt-3 mt-md-5 me-md-0">
+                <a href="https://jamesclear.com/how-to-stop-procrastinating" style="text-decoration: none;color:black;"
+                    target="_blank">
+                    <button class="btn px-4 me-md-5 rounded-pill py-3" style="background-color:#F4F2F0; color:black;"
+                        id="button2">2-Minute rule <i class="bi bi-arrow-right "></i></button></a>
+            </div>
+        </div><br><br><br>
+
+
+
+        <div class="row justify-content-center ms-md-auto py-5 mx-1 border rounded" id="div4">
+            <h2 class="fs-1 ms-lg-5">EAT Method <h4 class="ms-lg-5">(Eliminate, Automate, Delegate)</h4>
+            </h2>
+            <div class="col-md-12 col-lg-8 me-n4 mx-md-5 mx-lg-0 ms-lg-0">
+                <p class=" pe-md-5 me-sm-5 ms-sm-5 py-sm-5 px-md-3 mx-sm-5 col-lg-8 col-md-12 ps-sm-4 pe-sm-n5 mt-lg-1"
+                    id="text">"EAT" in time management stands for "Eliminate, Automate, Delegate (Tackle or Take
+                    Action)," where
+                    you assess tasks. Eliminate unnecessary ones, automate repetitive tasks, and take immediate action
+                    on those that need attention, streamlining productivity and focus.</p>
+            </div>
+            <div class="col-md-5 col-sm-6 col-lg-4 col-8 ps-sm-3 px-4 ps-md-5 my-5 py-5 py-md-0 px-md-5 me-n5 mt-lg-2 mt-md-2 mt-sm-1"
+                id="img2">
+                <img src="EAT.png" alt="The two minute rule image" width="310"
+                    class="img-fluid rounded ms-sm-2 ms-md-0 ms-0 mt-lg-4 mt-md-5 pe-n5 me-n5 border" id="img1">
+            </div>
+            <div class="text-md-end me-lg-5 text-center mt-3 mt-md-5 me-md-0">
+                <a href="https://www.hiddenlevers.ai/p/eliminate-automate-delegate-for-solopreneurs"
+                    target="_blank"><button class="btn px-4 me-md-5 rounded-pill py-3"
+                        style="background-color:#F4F2F0; color:black;" id="button3">EAT
+                        method <i class="bi bi-arrow-right "></i></button></a>
+            </div>
+        </div><br><br><br><br><br>
+
+
+
+
+
+        <footer class="text-center" style="color: #999999;">
+            <p>&copy; Progress Tracker</p>
+        </footer>
+    </div>
+
+
+    <script>
+        let sun = document.getElementById('sun');
+        let moon = document.getElementById('moon');
+        moon.style.display = "none";
+        let bgarr = [];
+        let body = document.body;
+        let bargraphimg = document.getElementById('bargraphimg');
+        let button = document.getElementById('button');
+        let button1 = document.getElementById('button1');
+        let button2 = document.getElementById('button2');
+        let button3 = document.getElementById('button3');
+        let div1 = document.getElementById('div1');
+        let div2 = document.getElementById('div2');
+        let div3 = document.getElementById('div3');
+        let div4 = document.getElementById('div4');
+
+
+
+        sun.addEventListener('click', () => {
+            moon.style.display = "block";
+            sun.style.display = "none";
+            body.style.backgroundColor = "#F5F5F5";
+            body.style.color = "black";
+            button.style.backgroundColor = "#e6e6e6";
+            button1.style.backgroundColor = "#e6e6e6";
+            button2.style.backgroundColor = "#e6e6e6";
+            button3.style.backgroundColor = "#e6e6e6";
+
+            button.style.borderColor = "black";
+            button1.style.borderColor = "black";
+            button2.style.borderColor = "black";
+            button3.style.borderColor = "black";
+
+            div1.classList.add('border-dark');
+            div2.classList.add('border-dark');
+            div3.classList.add('border-dark');
+            div4.classList.add('border-dark');
+            saveColors();
+        })
+
+        moon.addEventListener('click', () => {
+            moon.style.display = "none";
+            sun.style.display = "block";
+            body.style.backgroundColor = "black";
+            body.style.color = "white";
+            button.style.backgroundColor = "#f4f2f0";
+            button1.style.backgroundColor = "#f4f2f0";
+            button2.style.backgroundColor = "#f4f2f0";
+            button3.style.backgroundColor = "#f4f2f0";
+            div1.classList.remove('border-dark');
+            div2.classList.remove('border-dark');
+            div3.classList.remove('border-dark');
+            div4.classList.remove('border-dark');
+            saveColors();
+        });
+
+        function saveColors() {
+            let colors = {
+                bgColor: body.style.backgroundColor,
+                textColor: body.style.color,
+                btncolor: button.style.backgroundColor,
+            };
+            localStorage.setItem('colors', JSON.stringify(colors));
+        }
+
+
+        function retrievecolors() {
+            let storedColors = JSON.parse(localStorage.getItem('colors')) || {};
+            let storedBgColor = storedColors.bgColor || 'black';
+            let storedTextColor = storedColors.textColor || 'white';
+            let btncolorr = storedColors.btncolor;
+            body.style.backgroundColor = storedBgColor;
+            body.style.color = storedTextColor;
+            button.style.backgroundColor = btncolorr;
+            button1.style.backgroundColor = btncolorr;
+            button2.style.backgroundColor = btncolorr;
+            button3.style.backgroundColor = btncolorr;
+
+
+            if (body.style.backgroundColor = "#F5F5F5" && body.style.color == "black") {
+                button.style.borderColor="black";
+                button1.style.borderColor = "black";
+                button2.style.borderColor = "black";
+                button3.style.borderColor = "black";
+                div1.classList.add('border-dark');
+                div2.classList.add('border-dark');
+                div3.classList.add('border-dark');
+                div4.classList.add('border-dark');
+            }
+            else{
+                div1.classList.remove('border-dark');
+                div2.classList.remove('border-dark');
+                div3.classList.remove('border-dark');
+                div4.classList.remove('border-dark');
+            }
+
+
+
+            if (storedBgColor = "black" && storedTextColor == "white") {
+                sun.style.display = "block";
+                moon.style.display = "none";
+            }
+            else {
+                sun.style.display = "none";
+                moon.style.display = "block";
+            }
+
+
+        }
+
+
+        retrievecolors();
+    </script>
+    <script>
+        let storedclr = JSON.parse(localStorage.getItem('colors'));
+
+        function change() {
+            let storedbgclr = storedclr.bgColor || 'black';
+            let storedtxtclr = storedclr.textColor || 'white';
+            document.body.style.backgroundColor = storedbgclr;
+            document.body.style.color = storedtxtclr;
+        }
+        change();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

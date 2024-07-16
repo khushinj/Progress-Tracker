@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Home</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-size: 7rem;
+            font-weight: 100;
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-weight: 400;
+            margin: 20px 0;
+        }
+
+        #navbarNavAltMarkup>div>a {
+            transition: ease-out 0.2s;
+        }
+
+        #navbarNavAltMarkup>div>a:hover {
+            transform: scale(1.2);
+        }
+
+        #growth {
+            margin-top: 4rem;
+        }
+
+        #success {
+            margin-top: -1rem;
+            margin-left: -2rem;
+        }
+
+        #Sign-Up {
+            margin: 5rem 0 0 0;
+            text-align: center;
+        }
+
+        .btn-success {
+            margin-top: 1rem;
+            height: 50px;
+            width: 124px;
+            border-radius: 25px;
+            transition: ease-in-out 0.5s;
+        }
+
+        .btn-success:hover {
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 5rem;
+            }
+
+            .btn-success {
+                margin-left: 0;
+            }
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+
+        @media screen and (min-width: 768px) and (max-width:827px) {
+            h1 {
+                font-size: 6rem;
+            }
+        }
+
+        @media screen and (max-width:470px) {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (max-width:350px) {
+            h1 {
+                font-size: 3.2rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        #success {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media screen and (min-width:768px) and (max-width: 966px) {
+            #picsvg {
+                width: 30rem;
+            }
+        }
+
+        #cta1:hover {
+            transform: scale(1.2);
+        }
+
+        @media screen and (max-width: 700px) {
+            #cta1 {
+                width: 500px;
+            }
+        }
+
+        #cta1 {
+            background-color: #6C63FF;
+            color: whitesmoke;
+            height: 60px;
+            width: 140px;
+            transition: ease-in-out 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid px-md-5">
+
+
+        <nav class="navbar navbar-expand-lg bg-light fixed-top  lh-1 pt-3 px-md-3" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="Home.html"><img src="logo.png" alt="logo" height="40em"
+                        width="35em">&nbsp;Progress Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center ps-lg-5 ms-lg-5" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center ms-lg-5 ps-lg-4">
+                        <a class="nav-link active fs-6 fw-bolder border border-secondary rounded px-4 p-2 me-lg-3"
+                            aria-current="page" href="#" style="color: #6C63FF;">Home</a>
+                        <a class="nav-link text-dark fw-semibold px-4" href="Features.html">Features</a>
+                        <a class="nav-link text-dark fw-semibold px-4" href="Techniques.html">Techniques</a>
+                    </div><br>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center justify-content-lg-end me-n5 gap-2 navbar-nav text-center "
+                    id="navbarNavAltMarkup">
+                    <div class="fs-5 me-lg-4 order-lg-1 order-sm-3 order-3 my-lg-0 my-sm-2 my-2">
+                        <i class="bi bi-brightness-high text-dark" id="sun"></i>
+                        <i class="bi bi-moon text-dark" id="moon"></i>
+                    </div>
+                    <a href="Sign-up.html" class="mb-lg-0 mb-md-2 order-1 order-sm-1 order-lg-2"><button
+                            class="btn btn-primary">Sign Up</button></a>
+                    <a href="Log-in.html" class="me-n5 order-2 order-lg-3 order-sm-2"><button
+                            class="btn btn-primary">Log In</button></a>
+                </div>
+            </div>
+        </nav><br><br><br>
+
+
+        <!--991-->
+
+        <div class="container-fluid row my-2 mt-lg-4 px-0" id="first">
+
+            <div
+                class="col-sm-12 col-md-12 col-lg-9 mt-lg-5 mt-0 mb-n5 ms-md-5 me-md-5 ms-sm-3 ms-0 ms-1 mt-md-0 mx-lg-0 mx-0 animate__animated animate__fadeInLeft animate__slow">
+                <h1 class="pt-5 mt-sm-2 mt-md-0">Welcome to <br>Progress Tracker<br></h1>
+                <h3 class="ms-3">- Your Personal Success Journey Starts Here!</h3>
+            </div>
+
+
+            <div class="col-sm-12 text-md-center col-lg-3 mt-5 pt-5 me-md-n1">
+                <img src="Bargraph-final.png" alt="Bar graph" height="20px" class="img-fluid my-5 mx-md-4 mx-sm-3"
+                    id="bargraphimg" />
+            </div>
+
+            <div class="text-md-end text-center">
+                <a href="todo2.html"><button class="btn me-md-5 mt-4 text-nowrap rounded-pill" id="cta1"><b>Tracker</b>
+                        &rarr;</button></a>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center ms-md-auto py-5" id="growth">
+            <h2 class="fs-1">📈 Visualize Your Success Journey</h2>
+            <div class="col-md-9 col-sm-10 col-10 col-lg-5 py-4 py-md-5 px-md-5" data-aos="zoom-in"
+                data-aos-duration="1500">
+                <img src="Growth.png" alt="Growth chart" class="img-fluid px-n4 my-lg-5 mt-3 my-0 ">
+            </div>
+            <div class="col-md-12 col-lg-7 fs-3 py-5 ">
+                <p class="px-md-4 px-3 py-3 mx-md-3">See your goals come to life with our powerful visualization
+                    tools.
+                    Track your
+                    progress
+                    effortlessly through dynamic bar graphs, giving you a clear picture of your accomplishments over
+                    time. Whether it's career milestones, fitness achievements, or personal development goals, our
+                    platform makes your journey visually engaging and motivating.</p>
+            </div>
+        </div><br><br>
+
+        <div class="row justify-content-center ms-md-auto py-5">
+            <h2 class="fs-1">💡 Why Choose Progress Tracker?</h2><br><br><br>
+            <div class="col-md-12 col-lg-7">
+                <p class="fs-4 py-5 px-md-3">✅ Intuitive Goal Setting: <br>Effortlessly set and customize your goals
+                    with
+                    our user-friendly
+                    interface.<br><br>
+                    ✨ Real-Time Tracking: <br>Watch your progress unfold in real time, gaining insights that drive you
+                    towards success.<br><br>
+                    🎯 Personalized Insights: <br>Receive tailored recommendations based on your performance, keeping
+                    you on
+                    the path to excellence.</p>
+            </div>
+            <div class="col-md-9 col-sm-11  col-lg-5 ps-sm-3 px-4 my-md-5 py-5 px-md-5 " data-aos="zoom-in"
+                data-aos-duration="1500">
+                <img src="Success.png" alt="success factor" class="img-fluid rounded ms-sm-2 ms-md-0 ms-0" id="success">
+            </div>
+        </div>
+
+
+        <footer class="text-center" style="color: #999999;">
+            <p>&copy; Progress Tracker</p>
+        </footer>
+    </div>
+    
+
+    <script>
+        let sun = document.getElementById('sun');
+        let moon = document.getElementById('moon');
+        moon.style.display = "none";
+        let bgarr = [];
+        let body = document.body;
+        let bargraphimg = document.getElementById('bargraphimg');
+
+
+        sun.addEventListener('click', () => {
+            moon.style.display = "block";
+            sun.style.display = "none";
+            body.style.backgroundColor = "#F5F5F5";
+            body.style.color = "black";
+            bargraphimg.src = "whitebargraph.png"; // Change this to the path of your sun image
+            saveColors();
+        })
+
+        moon.addEventListener('click', () => {
+            moon.style.display = "none";
+            sun.style.display = "block";
+            body.style.backgroundColor = "black";
+            body.style.color = "white";
+            bargraphimg.src = "Bargraph-final.png";// Change this to the path of your original image
+            saveColors();
+        });
+
+        function saveColors() {
+            let colors = {
+                bgColor: body.style.backgroundColor,
+                textColor: body.style.color,
+            };
+            localStorage.setItem('colors', JSON.stringify(colors));
+        }
+
+
+        function retrievecolors() {
+            let storedColors = JSON.parse(localStorage.getItem('colors')) || {};
+            let storedBgColor = storedColors.bgColor || 'black';
+            let storedTextColor = storedColors.textColor || 'white';
+            body.style.backgroundColor = storedBgColor;
+            body.style.color = storedTextColor;
+            if (storedBgColor = "black" && storedTextColor == "white") {
+                bargraphimg.src = "Bargraph-final.png";
+                sun.style.display = "block";
+                moon.style.display = "none";
+            }
+            else {
+                bargraphimg.src = "whitebargraph.png";
+                sun.style.display = "none";
+                moon.style.display = "block";
+            }
+        }
+
+
+
+        retrievecolors();
+
+        
+        let storedclr = JSON.parse(localStorage.getItem('colors'));
+
+        function change() {
+            let storedbgclr = storedclr.bgColor || 'black';
+            let storedtxtclr = storedclr.textColor || 'white';
+            document.body.style.backgroundColor = storedbgclr;
+            document.body.style.color = storedtxtclr;
+        }
+        change();
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
